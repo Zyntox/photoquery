@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>- Photo Query -</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/animate.css">
+        <script src="./assets/js/unsplash-source.js"></script>
+    </head>
+    <body><!-- Body *START* -->
+        <header> <!-- Header *START* -->
+            <div class="header__overlay">
+                <div class="wrapper wrapper--medium">
+                    <h1 class="header__logo"><b>Photo Query</b> - An application by Marcus Nilsson, 2016.</h1>
+                </div>
+
+                <div class="search">
+                    <img class="search__logo" src="/assets/img/logo.svg" alt="">
+                    <h2 class="search__title">- What are you looking for? -</h2>
+                    <div class="searchbar">
+                        <input type="text" id="searchbar" class="searchbar__bar" placeholder="Search here" >
+                        <button class="searchbar__button" onclick="userSearch()">
+                            <img class="searchbar__img" src="/assets/img/search.svg" alt="">
+                        </button>
+                    </div>
+
+                    <h3 class="search__subheading">Search by:</h3>
+                    <ul id="classlist" class="querylist">
+                        <li id="category" class="querylist__option" onclick="selectQuery('category')">Category</li>
+                        <li id="users" class="querylist__option" onclick="selectQuery('users')">Users</li>
+                        <li id="collections" class="querylist__option" onclick="selectQuery('collections')">Collections</li>
+                    </ul>
+
+                    <ul id="topiclist" class="querylist hidden">
+                        <li id="buildings" class="querylist__option" onclick="selectTopic('buildings')">Buildings</li>
+                        <li id="food" class="querylist__option" onclick="selectTopic('food')">Food</li>
+                        <li id="nature" class="querylist__option" onclick="selectTopic('nature')">Nature</li>
+                        <li id="people" class="querylist__option" onclick="selectTopic('people')">People</li>
+                        <li id="technology" class="querylist__option" onclick="selectTopic('technology')">Technology</li>
+                        <li id="objects" class="querylist__option" onclick="selectTopic('objects')">Objects</li>
+                    </ul>
+                    
+                </div>
+            </div> 
+        </header> <!-- Header *END* -->
+
+
+        <div class="mainboard"> <!-- Mainboard *START* -->
+           <div class="wrapper wrapper--medium">
+                <div class="content">
+                        <ul id="imagelist">
+
+                        </ul>   
+                </div>
+            </div>
+        </div> <!-- Mainboard *END* -->
+         
+    </body><!-- Body *END* -->
+    <script type="text/javascript" src="./assets/js/mainscript.js"></script>
+</html>

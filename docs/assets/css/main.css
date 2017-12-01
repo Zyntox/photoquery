@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Yantramanav:400,300);
+button, p, ul, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0 auto;
+}
+
+header {
+  color: #ffffff;
+  text-align: center;
+  background: url("https://source.unsplash.com/random");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header__overlay {
+  padding: 10px 0 10px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header__logo {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.wrapper--small {
+  width: 60%;
+}
+
+.wrapper--medium {
+  width: 80%;
+}
+
+.wrapper--large {
+  width: 95%;
+}
+
+::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffffff;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffffff;
+}
+
+:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+/**********************************************************************************
+    Specific classes (Placeholder title)
+**********************************************************************************/
+.search {
+  display: inline-block;
+  width: 80%;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 0 100px 0;
+}
+
+.search__logo {
+  min-width: 100px;
+  width: 12%;
+  margin: 0 0 20px 0;
+}
+
+.search__title, .search__subheading {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.searchbar__bar {
+  border-radius: 10px;
+  font-weight: 100;
+  font-family: "Roboto Slab", serif;
+  width: 55%;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: #ffffff;
+}
+
+.searchbar__button {
+  border-radius: 10px;
+  position: relative;
+  top: 3px;
+  padding: 13px 10px 13px 10px;
+  border: none;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.search__subheading {
+  font-weight: 100;
+  display: inline-block;
+  width: 150px;
+  margin: 20px 0 5px 0;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.searchbar__button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.searchbar__img {
+  width: 30px;
+}
+
+.querylist {
+  margin: 10px 0 0 0;
+  list-style: none;
+  text-align: center;
+}
+
+.querylist__option {
+  cursor: pointer;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 5px 3px 5px;
+  border: 1px solid #e8cfa0;
+  color: #e8cfa0;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 100;
+}
+
+.querylist__option:hover {
+  background-color: rgba(232, 207, 160, 0.5);
+}
+
+.querylist__option--active {
+  background-color: #e8cfa0;
+  color: #000000;
+}
+
+.mainboard {
+  background: url("../img/whitey.png");
+}
+
+.content {
+  border-radius: 10px;
+  min-height: 300px;
+  position: relative;
+  bottom: 75px;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  background-color: #ffffff;
+}
+
+.imagelist {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.imagelist__item {
+  border-radius: 20px;
+  background-color: #fff;
+  display: inline-block;
+  width: 19%;
+  height: 18%;
+  min-width: 150px;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+.imagelist__image {
+  width: 100%;
+  height: 100%;
+}
+
+/******************************************************************************
+    Media Queries!
+******************************************************************************/
+@media (max-width: 1000px) {
+  .imagelist__item {
+    width: 24%;
+  }
+}
+@media (max-width: 800px) {
+  .imagelist__item {
+    width: 32%;
+  }
+}
+@media (max-width: 600px) {
+  .imagelist__item {
+    width: 49%;
+  }
+}

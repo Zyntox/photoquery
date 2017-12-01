@@ -1,0 +1,245 @@
+html{
+}
+
+body{
+    margin: 0 auto;
+}
+
+header{
+    color: $first-color;
+    text-align: center;
+    background: url('https://source.unsplash.com/random');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header__overlay{
+    padding: 10px 0 10px 0;
+    background-color: rgba(0,0,0, 0.6);
+}
+
+.header__logo{
+    text-align: center;
+    font-size: 18px;
+    font-family: $second-font;
+    font-weight: 100;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+.wrapper{
+    margin: 0 auto;
+}
+
+.wrapper--small{
+    width: 60%;
+}
+
+.wrapper--medium{
+    width: 80%;
+}
+
+.wrapper--large{
+    width: 95%;
+}
+
+
+::-webkit-input-placeholder {
+   color: $first-color;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $first-color;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $first-color;
+}
+
+:-ms-input-placeholder {
+   color: $first-color;
+}
+
+
+
+
+/**********************************************************************************
+    Specific classes (Placeholder title)
+**********************************************************************************/
+
+.search{
+    display: inline-block;
+    width: 80%;
+    color: $first-color;
+    text-align: center;
+
+    padding: 50px 0 100px 0;
+}
+
+.search__logo{
+
+    min-width: 100px;
+    width: 12%;
+    margin: 0 0 20px 0;
+}
+
+.search__title, .search__subheading{
+    font-family: $second-font;
+    font-weight: 300;
+    margin:  0 0 20px 0;
+}
+
+.searchbar__bar{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+
+    font-weight: 100;
+    font-family: $second-font;
+    width: 55%;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    background-color: rgba(255,255,255, 0.3);
+    border: none;
+    color: $first-color;
+}
+
+.searchbar__button{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    position: relative;
+    top: 3px;
+
+    padding: 13px 10px 13px 10px;
+    border: none;
+    color: $first-color;
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.search__subheading{
+    font-weight: 100;
+    display: inline-block;
+    width: 150px;
+    margin: 20px 0 5px 0;
+    padding: 0 0 5px 0 ;
+    border-bottom: 1px solid $first-color;
+}
+
+.searchbar__button:hover{
+    background-color: rgba(255,255,255, 0.5)
+}
+
+.searchbar__img{
+    width: 30px;
+}
+
+.querylist, {
+    margin: 10px 0 0 0;
+    list-style: none;
+    text-align: center;
+}
+
+
+.querylist__option{
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+
+    display: inline-block;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid $third-color;
+    color: $third-color;
+
+    font-family: $third-font;
+    font-weight: 100;
+}
+
+
+.querylist__option:hover{
+    background-color: rgba(232, 207, 160, 0.5);
+}
+
+.querylist__option--active{
+    background-color: $third-color;
+    color: $second-color;
+}
+
+.mainboard{
+    background: url('../img/whitey.png');
+}
+
+.content{
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    min-height: 300px;
+    position: relative;
+    bottom: 75px;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    background-color: $first-color;
+
+}
+
+.imagelist{
+    background-color: $first-color;
+    text-align: center;
+}
+
+.imagelist__item{
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+    background-color: #fff;
+    display: inline-block;
+    width: 19%;
+    height:18%;
+    min-width:150px;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    min-height: 100px;
+    max-height: 200px;
+}
+.imagelist__image{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/******************************************************************************
+    Media Queries!
+******************************************************************************/
+
+@media (max-width: 1000px) {
+
+ .imagelist__item{
+     width: 24%;
+ }
+}
+
+@media (max-width: 800px) {
+
+ .imagelist__item{
+     width: 32%;
+ }
+}
+
+@media (max-width: 600px) {
+
+ .imagelist__item{
+     width: 49%;
+ }
+}
