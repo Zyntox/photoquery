@@ -39,7 +39,7 @@ gulp.task('styles', function() {
      }))
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())
-    .pipe(gulp.dest('dist/assets/css'))
+    .pipe(gulp.dest('docs/assets/css'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
@@ -47,8 +47,7 @@ gulp.task('styles', function() {
 // Experimental task that doesnt seem to work...
 gulp.task('scripts', function(){
     return gulp.src(['src/assets/js/mainscript.js'])
-      .pipe(jslint({ /* this object represents the JSLint directives being passed down */ }))
-      .pipe(jslint.reporter( 'my-reporter' ));
+      .pipe(gulp.dest('docs/assets/js'));
 });
 
 
@@ -63,8 +62,8 @@ gulp.task ('hello', function(){
     the  browser window. The task will only be run after 'browserSync'
     and  'styles'.*/
 
-gulp.task('watch', ['browserSync', 'styles'], function(){
+gulp.task('watch', ['browserSync', 'styles', 'scripts'], function(){
   gulp.watch('src/styles/**/*.scss', ['styles']);
   gulp.watch('src/*.html', browserSync.reload);
-  gulp.watch('assets/js/**/*.js', ['scripts'] , browserSync.reload);
+  gulp.watch('src/assets/js/**/*.js', ['scripts'] , browserSync.reload);
 })
